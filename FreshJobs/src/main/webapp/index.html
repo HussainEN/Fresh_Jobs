@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  
+    <link href="../resources/css/styles.css" rel="stylesheet">
+</head>
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(45deg, #4CAF50, #007bff);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding: 0;
+        }
+         .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+        .card {
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            margin: 15px;
+            padding: 20px;
+            text-align: center;
+            flex: 1 1 calc(25% - 30px);
+            box-sizing: border-box;
+        }
+        .card h3 {
+            margin: 0;
+            padding: 0;
+            color: #007bff;
+             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+.h2{
+    text-align: right;
+    text-align: center;
+    color:black;
+    background-color:#dee2e6;
+    
+}
+
+           .nav-item {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+/* Hover state for navigation items */
+.nav-item:hover {
+    background-color: #dee2e6;
+    color: #4CAF50;
+}
+
+/* Active state for the current page navigation item */
+.nav-item.active {
+    background-color: #f8f9fa;
+    color: #4CAF50;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+/* Optional: Styling for navigation items within a nav container */
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px 0;
+}
+        .nav-link {
+            display:inline;
+            border-right:250px;
+             
+        }
+      .btn {
+    float: right; 
+    margin-top: 10px; 
+    padding: 10px 20px; 
+    background-color: #4CAF50;
+    color: white;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #45a049; 
+}
+.nav-link active{
+   color:red;
+   align-items: right;
+}
+.nav-item.ml-auto {
+    margin-left: auto;
+}
+.logo {
+    font-family: 'Arial', sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    color: #333;
+    border-radius: 5px; 
+
+}
+
+.fresh {
+    color: #4CAF50; /* Green color */
+}
+
+.jobs {
+    color: #007bff; /* Dark gray color */
+}
+   .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: #007bff;
+        }
+</style>
+<body>
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+             <div class="logo">
+        <span class="fresh">Fresh</span>
+        <span class="jobs">Jobs</span>
+    </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="ListItems.jsp">Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="NewestJobs.jsp">Newest Jobs</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="About.jsp">Team Members</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Login.jsp">Log Out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    
+    <h3 style="text-align:right; color:#dee2e6;">2030 Vision</h3>
+        <div class="container">
+
+    <h2>Newest Jobs</h2>
+
+       <div class="cards-container">
+          <div class="card">
+                <h3>Front-End Developer</h3>
+                <h4>Misk <hr> Riyadh</h4>
+                <h5>Experience: 2 Years </h5>
+                <p>Salary 7300 SAR</p>
+            </div><hr>
+            <div class="card">
+                <h3>Application Developer</h3>
+                <h4>Sadaia <hr> Jazan</h4>
+                <h5>Experience: 1 Years </h5>
+                <p>Salary 5500 SAR</p>
+            </div>
+            <div class="card">
+            <h3>Application<br>UX/UI Designer</h3>
+                <h4>Al'Rajhi <hr> Jazan</h4>
+                <h5>Experience: 3 Years </h5>
+                <p>Salary 6500 SAR</p>
+            </div>
+            <div class="card">
+                <h3>Application Developer</h3>
+                <h4>Jazan University <hr> Jazan</h4>
+                <h5>Experience: Fresh Graduite</h5>
+                <p>Salary 4500 SAR</p>
+            </div>
+            <div class="card">
+               <h3>Front-End Developer</h3>
+                <h4>Al-Ahly <hr> Riyadh</h4>
+                <h5>Experience: 2 Years </h5>
+                <p>Salary 7300 SAR</p>
+            </div>
+            <div class="card">
+                <h3>Beck-End Developer</h3>
+                <h4>Al-Ahly <hr> Riyadh</h4>
+                <h5>Experience: 2 Years </h5>
+                <p>Salary 7300 SAR</p>
+            </div>
+            <div class="card">
+                 <h3>Front-End Developer</h3>
+                <h4>Misk <hr> Riyadh</h4>
+                <h5>Experience: 2 Years </h5>
+                <p>Salary 7300 SAR</p>
+            </div>
+               <div class="card">
+                <h3>Front-End Developer</h3>
+                <h4>Misk <hr> Riyadh</h4>
+                <h5>Experience: 2 Years </h5>
+                <p>Salary 7300 SAR</p>
+               </div></div></div>
+           <footer><div class="row mt-3">
+                <div class="col text-center">
+                    <p class="mb-0">&copy; 2024 Fresh Jobs. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
+    <script src="../resources/js/scripts.js"></script>
+</body>
+</html>
